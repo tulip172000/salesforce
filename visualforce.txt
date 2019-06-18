@@ -1,0 +1,75 @@
+<apex:page standardController="Account" >
+<apex:pageBlock title="Account details">
+<apex:detail />
+</apex:pageBlock>
+ 
+  
+ 
+
+
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>
+
+
+
+
+2. to show details of custom object
+
+<apex:page standardController="Rental__c" >
+<apex:pageBlock title="rental details">
+<apex:detail />
+</apex:pageBlock>
+
+</apex:page>
+
+
+
+3.Tabbed page
+
+
+<apex:page standardController="Account" >
+<apex:tabPanel >
+<apex:tab label="All Accounts" >
+
+<apex:listViews type="Account"/>
+
+</apex:tab>
+<apex:tab label="Opportunity">
+<apex:listViews type="Opportunity"/>
+
+
+</apex:tab>
+</apex:tabPanel>
+ 
+</apex:page>
+
+
+4.To display fields of particular field
+
+<apex:page standardController="Candidate__c">
+<apex:pageBlock title="Candidate Details">
+    Name:{!Candidate__c.First_name__c}<br/>
+    Details:{!Candidate__c.Phone__c}
+ 
+</apex:pageBlock>
+ 
+</apex:page>
+
+
+
+https://github.com/tulip172000/sfdc.git
+https://github.com/tulip172000/sfdc
+
+
+5.To create form and change values of fields in the objects and fields 
+
+<apex:page standardController="Contact" >
+<apex:form >
+        Name:<apex:inputField value="{!contact.firstname}"/><br/>
+            Birthdate:<apex:inputField value="{!contact.birthdate}"/><br/>
+                Department:<apex:inputField value="{!contact.department}"/><br/>
+                 Language:<apex:inputField value="{!contact.Languages__c}"/><br/>
+
+                    Save:<apex:commandButton action="{!save}" value="Change"/> 
+</apex:form>
+</apex:page>
