@@ -1,0 +1,64 @@
+Salesforce Leads
+Think of a Lead as someone’s business card –   it’s information on how to reach an individual. The Lead has expressed an interest in learning more about us, or we have determined that this is a person we want to follow-up with. A Lead in Salesforce is a person, not a business, although that person may work for a company that we want to do business with.
+
+The basic rule of thumb: Any new person affiliated with a company that we don’t currently do business with should be entered into Salesforce as a Lead.
+
+NOTE: Often we see sales people input new names as Contacts. If you have a limited number of prospects to sell to, then this is actually the preferred route. However, most businesses have an unlimited supply of prospects. Therefore, they should enter all of their new prospects as Leads.
+
+Set a Time Limit for Leads
+Because we want to ensure that any view of data gives us insight for action, it’s important that we keep the Lead Record clean and up-to-date.
+
+At SalesForce Training, we have a straightforward rule – No Lead sits in the Lead Record for more than two weeks. We set these basic categories for each Lead:
+
+New
+Working – Contact Attempted
+Working – Contacted
+Qualified
+Closed – Not Contacted
+Closed – Not Qualified (or Not Interested)
+Closed – Spam
+Future Potential
+The assigned salesperson has the responsibility to reach out to the Lead and quickly ascertain the correct status and re-classify i.e  move the Lead out of the Lead Record
+ and classified as something else.
+
+Lead Management
+Many sales people struggle with re-classifying a Lead that is not connected to an Opportunity. As eternal optimists, it is their nature to want to hold onto the Lead until 
+such time as they can convert it into a revenue prospect (i.e. an Opportunity).
+
+Remember that re-classifying a Lead as Not Qualified doesn’t remove the Lead forever. It simply moves it out of any View that lists Current Leads.
+
+The key to managing a Lead is to assign a follow-up task, whether it’s a few days out, a few weeks or longer. The goal is to ensure it’s not sitting in the Lead queue looking like something current. This queue should only be reserved for the freshest leads demanding immediate follow-up.
+
+Contacts and Accounts
+The key behind Salesforce’s architecture is how you treat a Lead that may result in a deal…one day.
+
+
+If a Lead has been qualified as a potential source of business, it should be converted.  When you convert a Lead in Salesforce it simultaneously becomes both a Contact and an Account.
+
+An Account is the actual company, and the Contact is the person within the company – the same person from the Lead.
+
+NOTE: Confusion can arise in how Salesforce uses the word “Account”. Many sales people call their book of business their “accounts”. In Salesforce, an Account is a label for 
+a business entity – one that we already work with or hope to work with.
+
+Opportunity
+Whenever we convert a Lead to a Contact and an Account, we also have the option of converting it to an Opportunity.  An Opportunity is a future event associated with revenue. It is the default option after you have converted a Lead into a Contact and Account.
+
+Salesforce assumes that, when you convert a Lead, it is because you have uncovered some type of revenue potential within an Account.  This is revenue potential is 
+the Opportunity and forms the lifeblood of every sales funnel.
+
+
+
+
+
+
+
+Leads are people who have shown some level of interest in your product or service. Examples include signing up on the site, filling out a form, downloading a buyer’s guide, giving their information at a trade show booth, etc. Leads can remain
+ a lead for 5 minutes or for 5 years. Every individual should be entered into the system as a lead. In a perfect world, your marketing automation client is syncing with SFDC.
+
+Contacts are created as soon as a lead expresses interest in doing business. The lead is converted into a contact. Contacts are people who are attached to accounts (companies) and are considering going through a transaction.
+
+Opportunities are transactions. When an opportunity is created (converted) it’s to signal the start of a sales cycle. There can be many opportunities in a company but a specific contact can only be attached to one account.
+
+A lead and a contact are the only two objects in the system that describe a person. A lead cannot evolve in an opportunity.
+
+Once the conversion from lead to contact has occurred the sales rep should interact mainly with the opportunity record. From there, let your sales process drive it to a close!

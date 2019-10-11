@@ -1,0 +1,37 @@
+Leads
+Leads are ordinarily the name of a man, the organization they work for, their address, telephone number, email address, and so on. You can think of lead as a business card you received at a conference. You wouldn’t know how interested a Lead is in your product or service; on the off chance that they are the chief and have a financial plan or need. Leads are mostly used to run a quick check to check the probability of converting the client to an account or opportunity (more on these a little later). Salesforce gives the ability to catchLeads from your site through the Web-to-Lead functionality. While the subject of viable Lead Management is a discussion into itself, here are some best practices for Leads in Salesforce:
+
+Determine if you should use Leads. In some cases (for example, where customers don’t need/use the Web-to-Lead functionality, or where it is important to maintain several Contacts for a given Account), the Lead object might not serve your purposes.
+Identify a clear and concise Lead qualification process.
+Leverage the Web-to-lead form (if applicable).
+Use Leads for qualifying and converting, not selling.
+Be careful not to create duplicates. Consider using an AppExchange application that addresses this.
+Develop simple lead scoring. This is particularly true when managing a large number of Leads, and where a quick response to the Lead is necessary.
+Accounts
+On a broader perspective, accounts are organizations or clients. It has an organization name, address, telephone number, and so on. Salesforce provides a mechanism of creating different addresses which can be utilized for Billing, Shipping, and so forth, within a single account. Accounts can also be organizations you expect can convert into clients, partners as well as sellers. Here are some prescribed procedures for utilizing Accounts in Salesforce.
+
+When using multiple Accounts for locations, add a dash, and then the city and state to the Account name.
+You may consider using a custom status pick-list field to designate Suspects, Prospects, and Customers instead of the standard Account Type field. You may also include a custom Status Date field that (depending on your Salesforce Edition) might have a workflow rule with field update that changes the date when the status changes.
+Be consistent in structuring your Accounts, especially if you decide to use Parent Accounts.
+If you do use Parent Accounts, add a custom checkbox. This will make it easy to identify Parents. (It is easy to identify Children Accounts as they have data in the Parent Account field.)
+Add a custom alternate Account name for companies that have recently changed names or have common names or initials.
+Contactsleads
+Contacts are the general population related with Accounts that you market to, pitch to, support, and so forth. Each can have an address independent from their Account, and in addition, a telephone number, fax number, and so on. Contacts are related with just a single Account, however, can be associated with numerous Accounts using  Account Contact Roles. A couple of best practices for utilizing Contacts in Salesforce are:
+
+Add a Custom Status or Check-box field to identify Inactive Contacts. You may also consider adding a custom Status Date that, like the Account Status, can be updated by a workflow field update when the status field or checkbox is changed.
+Wherever possible, try to enforce entry of the email address. This is possible with a validation rule or by producing a view or report of Contacts without email addresses.
+Add a custom common or nickname field.
+Consider adding a custom middle initial or middle name field.
+Consider adding a Job Type pick-list field to quickly identify key positions like CEO, Salesperson, etc. The standard Title field is text, and not that reliable for searching.
+Opportunities
+
+
+
+
+Opportunities are transactions between your organization and an Account. Commonly, this is a potential deal that would incorporate details about a particular item or service one of your sales rep is showcasing. There are a few other key snippets of data you have to make an Opportunity, including the Value (Amount) and an expected Close Date. As most organizations are occupied with picking up impressions into their potential deals pipeline, all Opportunities must have a Stage. The Opportunity Stage is utilized to recognize and track the different stages an Opportunity “travels” amid the business procedure. A few good practice cases to follow when using Opportunities in Salesforce include –
+
+Having clearly defined steps in your sales process.
+Being consistent as to when Opportunities are created. In other words, don’t have some of your salespeople creating Opportunities before they can assign a value, a close date and the sales stage and others creating Opportunities only after they’ve closed.
+Consider using the standard Type field to identify New Opportunities from Add-on type sales.
+If you are inside some pre-determined number of days, and the Opportunity is not yet closed, create exception reporting or email alerts triggered by the Close Date.
+Add a custom Reason Lost pick-list and text field with a Validation rule, requiring entry of the Stage to Closed Lost.
